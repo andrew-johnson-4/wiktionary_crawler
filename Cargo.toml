@@ -1,0 +1,14 @@
+[package]
+name = "wiktionary_crawler"
+version = "0.0.1"
+authors = ["Andrew <andrew@subarctic.org>"]
+license = "MIT OR Apache-2.0"
+description = "Crawl Wiktionary Courteously yet Correctly and Persistently"
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/andrew-johnson-4/wiktionary_crawler"
+keywords = ["wiktionary","dictionary","web","crawler","parser"]
+
+[[bin]]
+name = "crawl"
+path = "src/bin_crawl.rs"
