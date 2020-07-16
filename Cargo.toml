@@ -9,6 +9,14 @@ readme = "README.md"
 repository = "https://github.com/andrew-johnson-4/wiktionary_crawler"
 keywords = ["wiktionary","dictionary","web","crawler","parser"]
 
+[dependencies]
+error-chain = "0.12"
+reqwest = "0.10"
+
+[dependencies.tokio]
+version = "0.2"
+features = ["macros"]
+
 [[bin]]
 name = "crawl"
 path = "src/bin_crawl.rs"
