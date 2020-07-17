@@ -9,3 +9,5 @@ pub struct WiktionaryEntry {
    ipa_pronunciation: Option<Vec<String>>,
    part_of_speech: Option<Vec<String>>,
 }
+
+pub mod crawler;
