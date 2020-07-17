@@ -1,3 +1,4 @@
+/*
 use error_chain::error_chain;
 error_chain! {
      foreign_links {
@@ -13,4 +14,11 @@ async fn main() -> Result<()> {
     let _content =  response.text().await?;
 
     Ok(())
+}
+*/
+use wiktionary_crawler::crawler::Crawler;
+
+fn main() -> std::io::Result<()> {
+   let _  = Crawler::new();
+   Ok(())
 }
