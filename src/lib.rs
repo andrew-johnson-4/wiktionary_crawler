@@ -7,4 +7,5 @@ pub struct WiktionaryEntry {
    word: String,
    language: Option<String>,
    ipa_pronunciation: Option<Vec<String>>,
+   part_of_speech: Option<Vec<String>>,
 }
