@@ -1,7 +1,7 @@
 use std::collections::HashSet;
 
-pub const MIN_REQUEST_INTERVAL: f64 = 60.0;
-pub const MAX_REQUEST_INTERVAL: f64 = 0.2;
+pub const MAX_REQUEST_INTERVAL: f64 = 60.0;
+pub const MIN_REQUEST_INTERVAL: f64 = 0.2;
 
 pub struct Crawler {
    pub request_interval: f64,
@@ -12,7 +12,7 @@ pub struct Crawler {
 impl Crawler {
    pub fn new() -> std::io::Result<Crawler> {
       let mut cr = Crawler {
-         request_interval: MAX_REQUEST_INTERVAL,
+         request_interval: MIN_REQUEST_INTERVAL,
          crawl_visited_urls: HashSet::new(),
          crawl_visited_words: HashSet::new(),
          crawl_queue: HashSet::new(),
